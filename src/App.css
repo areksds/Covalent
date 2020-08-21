@@ -1,38 +1,82 @@
 .App {
+  /* Aligns text */
   text-align: center;
+  /* Read this on margin, padding, and border: https://www.w3schools.com/css/css_boxmodel.asp */
+  margin: 40px 30px;
 }
 
 .App-logo {
-  height: 40vmin;
+  /* Defines height in terms of how big the overall screen is (so the logo would be 20% of the screen's size) */
+  height: 20vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  margin-bottom: 20px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* Life would be very difficult without flex: https://www.w3schools.com/css/css3_flexbox.asp*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.componentTests {
+  font-size: calc(10px + 1vmin);
+}
+
+.buttonTests {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  margin: 30px 0px;
+}
+
+.instructions {
+  text-align: left;
+}
+
+/*
+Cool thing to implement: pulsing logo? Need a cleaner png for this
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-pulse infinite 10s linear;
   }
 }
+
+@keyframes App-logo-pulse {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  }
+}
+*/
+
+/*
+Original create-react-app header CSS. Ignore for now!
+
+.App-header {
+  background-color: white;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+*/
+

@@ -1,0 +1,44 @@
+
+/*
+Most of these CSS properties are self-explanatory. Some stand-outs:
+:hover, :active - these are special CSS properties for the button when a cursor hovers over it / when it's been clicked.
+color vs background-color - the text's color vs the color of that element
+border-radius - how curved the edges of the element's box is (the higher, the more curved)
+*/
+
+.simpleButton {
+    border: 1px solid #000000;
+    border-radius: 24px;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.simpleButton:hover {
+    background-color: lightgray;
+}
+
+.simpleButton:active {
+    background-color: gray;
+}
+
+.green {
+    background-color: #80FFDB;
+    border: 0px;
+}
+
+.green:hover {
+    background-color: #00DB9D;
+    color: white;
+}
+
+.green:active {
+    background-color: #019a6e;
+    color: white;
+}
