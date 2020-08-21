@@ -5,7 +5,7 @@ class SimpleButton extends Component {
 
     render() {
         return (
-         <div href={this.props.url} className={"simpleButton " + this.props.color}>{this.props.name}</div>
+         <button className={"simpleButton " + this.props.color} onClick={() => alert(this.props.alert)}>{this.props.name}</button>
         );
     }
 }
