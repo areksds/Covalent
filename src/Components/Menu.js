@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.png';
+import logo from './../logo.png';
 import './Menu.css';
-import SimpleButton from './Components/SimpleButton';
+import SimpleButton from './SimpleButton';
 
 //This file is for the Game Selection/Menu/Homepage for Covalent
 //@Michael
@@ -14,6 +14,7 @@ function Menu() {
             <p className="logo-text">COVALENT</p>
         </div>
         </body>
+        
     );
 }
 
