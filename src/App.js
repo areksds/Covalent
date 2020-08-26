@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.png';
 import './App.css';
 import SimpleButton from './Components/SimpleButton';
-
+import Avatar from './Components/Avatar'; 
 
 // Hi all! Welcome to our main app code.
 
