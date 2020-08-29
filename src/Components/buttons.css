@@ -11,15 +11,32 @@ border-radius - how curved the edges of the element's box is (the higher, the mo
     border-radius: 24px;
     background-color: white;
     color: black;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    font-size: 3vmin; /*issue: i want to have a minimum font size*/
+    width: 10vw;
+    height: 5vh;
+    min-width: 80px;
+    max-width: 160px;
+    min-height: 20px;
+    max-height: 40px;
     text-transform: uppercase;
     text-align: center;
-    padding: 5px 50px;
-    margin: 10px;
+    margin: 1vmin;
     cursor: pointer;
 }
 
+@media all and (max-height: 400px) {
+    .simpleButton { 
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .simpleButton { 
+        font-size: 12px;
+    }
+}
 .simpleButton:hover {
     background-color: lightgray;
 }
@@ -28,17 +45,32 @@ border-radius - how curved the edges of the element's box is (the higher, the mo
     background-color: gray;
 }
 
-.green {
+.join {
     background-color: #80FFDB;
     border: 0px;
 }
 
-.green:hover {
+.join:hover {
     background-color: #00DB9D;
     color: white;
 }
 
-.green:active {
+.join:active {
     background-color: #019a6e;
+    color: white;
+}
+
+.host {
+    background-color: #48BFE3;
+    border: 0px;
+}
+
+.host:hover {
+    background-color: #1D95BA;
+    color: white;
+}
+
+.host:active {
+    background-color: #13637c;
     color: white;
 }

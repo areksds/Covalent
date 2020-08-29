@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.png';
+import logo from './logo.svg';
 import './App.css';
 import SimpleButton from './Components/SimpleButton';
 import Avatar from './Components/Avatar';
