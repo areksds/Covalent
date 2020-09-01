@@ -13,9 +13,12 @@ border-radius - how curved the edges of the element's box is (the higher, the mo
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 3vmin; /*issue: i want to have a minimum font size*/
+    font-size: calc(12px + 1vmin);
     width: 10vw;
     height: 5vh;
+    /*
+        Edits are good. Can't tell if the buttons are too small on mobile or not 
+    */
     min-width: 80px;
     max-width: 160px;
     min-height: 20px;
@@ -26,17 +29,6 @@ border-radius - how curved the edges of the element's box is (the higher, the mo
     cursor: pointer;
 }
 
-@media all and (max-height: 400px) {
-    .simpleButton { 
-        font-size: 12px;
-    }
-}
-
-@media all and (max-width: 400px) {
-    .simpleButton { 
-        font-size: 12px;
-    }
-}
 .simpleButton:hover {
     background-color: lightgray;
 }
