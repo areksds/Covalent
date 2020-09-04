@@ -13,8 +13,9 @@
     position: absolute;
     left: 22px;
     top: -4px;
-    
-    font-family: Roboto;
+    /* Not every browser has certain fonts (like Roboto). 
+    I changed the font to Roboto Slab (it was manually loaded in index.css) */
+    font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -25,12 +26,11 @@
 .submitted {
     position: absolute;
     left: 20px;
-    top: 31px;
-    
-    font-family: Roboto Condensed;
+    top: 31px;  
+    font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     color: #000000;
 }
