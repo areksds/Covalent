@@ -1,0 +1,38 @@
+.statements {
+    display: flex;
+    flex-direction: column;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: center;
+}
+
+.button {
+    margin: 8px;
+    width: 768px;
+    
+    background-color: #E1E1E1;
+    border: 0px;
+    border-radius: 50vh;
+    padding: 8px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #80FFDB;
+}
+
+.button:active {
+    background-color: #00DB9D;
+    color: white;
+}

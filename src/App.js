@@ -3,6 +3,7 @@ import logo from './logo.png';
 import './App.css';
 import SimpleButton from './Components/SimpleButton';
 import Avatar from './Components/Avatar';
+import Selection from './Components/Selection';
 import Timer from './Components/Timer';
 
 // Hi all! Welcome to our main app code.
