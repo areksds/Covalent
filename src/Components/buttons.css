@@ -11,21 +11,12 @@ border-radius - how curved the edges of the element's box is (the higher, the mo
     border-radius: 24px;
     background-color: white;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
     font-weight: bold;
-    font-size: calc(12px + 1vmin);
-    width: 10vw;
-    height: 5vh;
-    /*
-        Edits are good. Can't tell if the buttons are too small on mobile or not 
-    */
-    min-width: 80px;
-    max-width: 160px;
-    min-height: 20px;
-    max-height: 40px;
     text-transform: uppercase;
     text-align: center;
-    margin: 1vmin;
+    padding: 5px 50px;
+    margin: 10px;
     cursor: pointer;
 }
 
@@ -37,32 +28,17 @@ border-radius - how curved the edges of the element's box is (the higher, the mo
     background-color: gray;
 }
 
-.join {
+.green {
     background-color: #80FFDB;
     border: 0px;
 }
 
-.join:hover {
+.green:hover {
     background-color: #00DB9D;
     color: white;
 }
 
-.join:active {
+.green:active {
     background-color: #019a6e;
-    color: white;
-}
-
-.host {
-    background-color: #48BFE3;
-    border: 0px;
-}
-
-.host:hover {
-    background-color: #1D95BA;
-    color: white;
-}
-
-.host:active {
-    background-color: #13637c;
     color: white;
 }

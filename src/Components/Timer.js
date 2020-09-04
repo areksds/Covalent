@@ -7,14 +7,6 @@ import './Timer.css';
 // @Daniel
 
 class Timer extends Component {
-
-    /* 
-    
-    This looks great! We're eventually going to have to change state into one used by the whole app.
-    For now, though, everything looks awesome. If you have any questions on state, componentDidMount/WillUnmount, etc. please ask me!
-
-    */
-
     state = {
         minutes: 2,
         seconds: 0,
@@ -53,7 +45,6 @@ class Timer extends Component {
                 <div className="box">
                     <p className="time">{minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p>
                     <p className="submitted">0 SUBMITTED</p>
-                    {/* Change number 0 to a dynamic number in state later */}
                     <div><img src= {clock} className="clock"/></div>
                 </div>
             </body>
