@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Selection.css';
 
 class Selection extends React.Component {
@@ -10,23 +9,21 @@ class Selection extends React.Component {
         this.choice2 = "I like pineapple pizza.";
         this.choice3 = "I think BruinLabs is very cool.";
     }
-    
+
     choose(statement) {
         alert(statement);
     }
 
     render() {
-      return (
+        return (
             <div className="statements">
                 <p>Choose <b>{this.player}'s</b> lie.</p>
-                <button class="button" onClick={() => {this.choose(1)}}>{this.choice1}</button>
-                <button class="button" onClick={() => {this.choose(2)}}>{this.choice2}</button>
-                <button class="button" onClick={() => {this.choose(3)}}>{this.choice3}</button>
+                <button class="button" onClick={() => { this.choose(1) }}>{this.choice1}</button>
+                <button class="button" onClick={() => { this.choose(2) }}>{this.choice2}</button>
+                <button class="button" onClick={() => { this.choose(3) }}>{this.choice3}</button>
             </div>
-      );
+        );
     }
-  }
-  
-  ReactDOM.render(<Selection />, document.getElementById('root'));
-  
-  export default Selection;
+}
+
+export default Selection;
