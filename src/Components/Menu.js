@@ -1,21 +1,19 @@
-import React, { Component } from 'react';
-import MenuLogo from './../logo.svg';
-import './Menu.css';
-import SimpleButton from './SimpleButton';
+import React, { Component } from "react";
+import MenuLogo from "./../logo.svg";
+import "./Menu.css";
+import SlideAnim from "./SlideAnim";
+import SimpleButton from "./SimpleButton";
+import JoinOptions from "./JoinOptions";
 
 //This file is for the Game Selection/Menu/Homepage for Covalent
 //@Michael
 
 class Menu extends Component {
-
-    /* 
-
-    componentWillMount and componentWillUnmount get called when a component is added and removed, respectively. 
-    This component has some styles that change the body—but we don't want those changes for the whole app!
-    So, we can use these functions to isolate those changes. I went ahead and removed the body styles and added these instead.
-    When the component's added/removed, a CSS class (Menu-background) is added/removed from the body.
-    
-    */
+    constructor(props) {
+        super(props);
+        this.join = React.createRef();
+        this.host = React.createRef();
+    }
 
     componentWillMount() {
         document.body.classList.add("Menu-background");
@@ -25,28 +23,47 @@ class Menu extends Component {
         document.body.classList.remove("Menu-background");
     }
 
+    handleJoinClick = (e) => {
+        this.join.current.displayContent(e);
+    };
+
+    handleHostClick = () => {};
+
     render() {
         return (
             <div className="Menu">
-            <div className="Menu-body">
-                <img src={MenuLogo} className="logo-img" alt="Covalent Logo"></img>
-                <p className="logo-text">COVALENT</p>
-                <div className="Menu-buttons">
-                    <SimpleButton name="JOIN" type="join" alert=""></SimpleButton>
-                    {/* 
-                    Comment from survey on mockup:
-                    Add the join code field right before the button (instead of having to press it to show the field)
-                    Let's make sure to add that before release!
-
-                    Also: change alert to actual action once backend is added
-                    */}
-                    <SimpleButton name="HOST" type="host" alert=""></SimpleButton>
+                <div className="Menu-body">
+                    <div className="white">
+                        <img
+                            src={MenuLogo}
+                            className="logo-img"
+                            alt="Covalent Logo"
+                        ></img>
+                        <p className="logo-text">COVALENT</p>
+                    </div>
+                    <div className="Menu-buttons">
+                        <div className="default-button">
+                            <SimpleButton
+                                name="JOIN"
+                                type="join"
+                                onClick={() => this.handleJoinClick}
+                            ></SimpleButton>
+                        </div>
+                        <div className="join-options">
+                        <SlideAnim ref={this.join}>
+                            <JoinOptions />
+                        </SlideAnim></div>
+                        <div className="default-button">
+                            <SimpleButton
+                                name="HOST"
+                                type="host"
+                                onClick={() => this.handleHostClick}
+                            ></SimpleButton>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-            
         );
-
     }
 }
 
