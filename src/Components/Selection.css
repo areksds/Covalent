@@ -1,38 +1,40 @@
 .statements {
     display: flex;
     flex-direction: column;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
     text-align: center;
+    /* Changed this to max-width and removed from the button to make the text and buttons responsive on mobile */
+    max-width: 768px;
 }
 
-.button {
+/* 
+There's a strong likelihood we're going to use other <button>s in this app. 
+When a CSS stylesheet carries styles for one or the other, it sets *all* inputs and buttons with those settings! 
+Use classes whenever you can to limit the scope of the styles in your sheets.
+*/
+
+.statement-button {
     margin: 8px;
-    width: 768px;
-    
     background-color: #E1E1E1;
     border: 0px;
     border-radius: 50vh;
     padding: 8px;
-    
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     text-align: center;
     color: black;
-
-    cursor: pointer;
 }
 
-.button:hover {
+.statement-button:hover {
     background-color: #80FFDB;
 }
 
-.button:active {
+.statement-button:active {
     background-color: #00DB9D;
     color: white;
 }

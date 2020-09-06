@@ -18,9 +18,9 @@ class Selection extends React.Component {
         return (
             <div className="statements">
                 <p>Choose <b>{this.player}'s</b> lie.</p>
-                <button class="button" onClick={() => { this.choose(1) }}>{this.choice1}</button>
-                <button class="button" onClick={() => { this.choose(2) }}>{this.choice2}</button>
-                <button class="button" onClick={() => { this.choose(3) }}>{this.choice3}</button>
+                <button class="statement-button" onClick={() => { this.choose(1) }}>{this.choice1}</button>
+                <button class="statement-button" onClick={() => { this.choose(2) }}>{this.choice2}</button>
+                <button class="statement-button" onClick={() => { this.choose(3) }}>{this.choice3}</button>
             </div>
         );
     }
