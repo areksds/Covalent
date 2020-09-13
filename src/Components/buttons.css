@@ -6,6 +6,10 @@ color vs background-color - the text's color vs the color of that element
 border-radius - how curved the edges of the element's box is (the higher, the more curved)
 */
 
+button {
+    outline: 0 !important;
+}
+
 .simpleButton {
     border: 1px solid #000000;
     border-radius: 24px;
@@ -13,9 +17,9 @@ border-radius - how curved the edges of the element's box is (the higher, the mo
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: calc(12px + 1vmin);
-    width: 10vw;
-    height: 5vh;
+    font-size: calc(2px + 2.5vmin);
+    width: 20vmin;
+    height: 5vmin;
     /*
         Edits are good. Can't tell if the buttons are too small on mobile or not 
     */
@@ -29,12 +33,25 @@ border-radius - how curved the edges of the element's box is (the higher, the mo
     cursor: pointer;
 }
 
+@media all and (max-height: 400px) {
+    .simpleButton {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .simpleButton {
+        font-size: 12px;
+    }
+}
 .simpleButton:hover {
     background-color: lightgray;
+    outline: none;
 }
 
 .simpleButton:active {
     background-color: gray;
+    outline: none;
 }
 
 .join {

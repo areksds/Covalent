@@ -54,7 +54,7 @@ class Timer extends Component {
                     <p className="time">{minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p>
                     <p className="submitted">0 SUBMITTED</p>
                     {/* Change number 0 to a dynamic number in state later */}
-                    <div><img src= {clock} className="clock"/></div>
+                    <div><img src= {clock} className="clock" alt="clock"/></div>
                 </div>
             </body>
         )

@@ -30,7 +30,7 @@ class Settings extends Component {
     render() {
         return (<div>
             <h1>Instructions</h1>
-            <p>In 2 Truths & A Lie, you say (or in this case, type) 3 statements about yourself, 2 of which should be truths and 1 of which should be a lie. However, other players do not know which statement is a lie! Their objective is to guess which one is the lie, and your objective is to make them choose the wrong statement as the lie, so make the truths as interesting as possible!</p>
+            <p>In 2 Truths &#38; A Lie, you say (or in this case, type) 3 statements about yourself, 2 of which should be truths and 1 of which should be a lie. However, other players do not know which statement is a lie! Their objective is to guess which one is the lie, and your objective is to make them choose the wrong statement as the lie, so make the truths as interesting as possible!</p>
             <p>As the host, write any additional instructions for all your teammates' introduction videos and choose the settings for your game below:</p>
             <form id="settings-form">
                 <b><label for="time">Time Limit (30-300s): </label></b>
