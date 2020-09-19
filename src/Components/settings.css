@@ -1,0 +1,55 @@
+.Settings-background {
+    text-align: center; 
+    margin-top: 50px; 
+    font-family:'Roboto', sans-serif; 
+    /* 
+    Changed the width settings to stack a little better (and set a max-width for large screens)
+    */
+    width: 80%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.settings-form{
+    display: inline-block;
+}
+.settings-form label  {
+    font-weight: 700px;
+}
+
+/* 
+
+There's a strong likelihood we're going to use other <input>s and <button>s in this app. 
+When a CSS stylesheet carries styles for one or the other, it sets *all* inputs and buttons with those settings! 
+Use classes whenever you can to limit the scope of the styles in your sheets.
+
+*/
+
+.settings-input{
+    width: 100px;
+  padding: 0px 10px; 
+  margin: 5px 5px;
+  box-sizing: border-box;
+}
+#instructions{
+    width:50%; 
+}
+
+#link{
+    width:200px; 
+}
+#code{
+    width:90px; 
+}
+
+/* 
+Made some small edits to the button 
+*/
+
+.settings-button{
+    background-color: transparent;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 24px;
+}
+
